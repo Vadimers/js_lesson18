@@ -1,14 +1,63 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript №18</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Демонстрація Функціонального Програмування</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>JavaScript №17</h1>
-    <p>Відкрийте консоль для перегляду результатів (F12 або Ctrl+Shift+J)</p>
-    <script src="script.js"></script>
+  <div class="container">
+    <h1>Функціональне програмування в JavaScript</h1>
+
+    <!-- Curried Add -->
+    <section>
+      <h2>1. Карування: Додавання чисел</h2>
+      <form id="curriedAddForm">
+        <label>Число 1: <input type="number" name="a" required></label>
+        <label>Число 2: <input type="number" name="b" required></label>
+        <label>Число 3: <input type="number" name="c" required></label>
+        <button type="submit">Обчислити</button>
+      </form>
+      <p>Результат: <span id="curriedAddResult">-</span></p>
+    </section>
+
+    <!-- Curried Domain -->
+    <section>
+      <h2>2. Карування: Побудова домену</h2>
+      <form id="curriedDomainForm">
+        <label>Протокол: <input type="text" name="protocol" placeholder="https" required></label>
+        <label>Домен: <input type="text" name="domainName" placeholder="example" required></label>
+        <label>TLD: <input type="text" name="tld" placeholder="com" required></label>
+        <button type="submit">Сформувати</button>
+      </form>
+      <p>Результат: <span id="curriedDomainResult">-</span></p>
+    </section>
+
+    <!-- Modify Function -->
+    <section>
+      <h2>3. Функція вищого порядку: Модифікація</h2>
+      <form id="modifyFunctionForm">
+        <label>Число: <input type="number" name="num" required></label>
+        <label>Множник: <input type="number" name="multiplier" required></label>
+        <button type="submit">Обчислити</button>
+      </form>
+      <p>Оригінальний результат: <span id="originalResult">-</span></p>
+      <p>Модифікований результат: <span id="modifiedResult">-</span></p>
+    </section>
+
+    <!-- Nested Functions -->
+    <section>
+      <h2>4. Вкладені функції: Множення</h2>
+      <form id="nestedFunctionsForm">
+        <label>Число 1: <input type="number" name="arg1" required></label>
+        <label>Число 2: <input type="number" name="arg2" required></label>
+        <label>Число 3: <input type="number" name="arg3" required></label>
+        <button type="submit">Обчислити</button>
+      </form>
+      <p>Результат: <span id="nestedFunctionsResult">-</span></p>
+    </section>
+  </div>
+  <script type="module" src="script.js"></script>
 </body>
 </html>
